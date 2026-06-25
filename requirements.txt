@@ -1,0 +1,7 @@
+# Install with: pip install -r requirements.txt
+Django>=5.2
+Pillow>=10.0
+# Optional later:
+# django-crispy-forms
+# mysqlclient  (for MySQL)
+# djangorestframework
