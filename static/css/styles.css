@@ -1,0 +1,236 @@
+:root {
+  --brand: #0f5f8f;
+  --brand-dark: #0a3d5c;
+  --ink: #17212b;
+  --muted: #657282;
+  --soft: #f3f7f9;
+  --line: #dbe5ea;
+}
+
+body {
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+.navbar-brand {
+  color: var(--brand-dark);
+}
+
+.nav-link {
+  color: #334150;
+  font-weight: 600;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--brand);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-bg: var(--brand-dark);
+  --bs-btn-hover-border-color: var(--brand-dark);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-bg: var(--brand);
+  --bs-btn-hover-border-color: var(--brand);
+}
+
+.text-primary {
+  color: var(--brand) !important;
+}
+
+.bg-soft {
+  background: var(--soft);
+}
+
+.section-pad {
+  padding: 72px 0;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.hero-section {
+  background:
+    linear-gradient(90deg, rgba(10, 31, 45, .78), rgba(10, 31, 45, .25)),
+    url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
+}
+
+.auth-section {
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.auth-login {
+  background-image:
+    linear-gradient(90deg, rgba(10, 31, 45, .72), rgba(10, 31, 45, .18)),
+    url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=80");
+}
+
+.auth-register {
+  background-image:
+    linear-gradient(90deg, rgba(10, 31, 45, .70), rgba(10, 31, 45, .16)),
+    url("https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1800&q=80");
+}
+
+.eyebrow {
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-weight: 800;
+  margin-bottom: .5rem;
+}
+
+.section-copy {
+  color: var(--muted);
+  max-width: 680px;
+}
+
+.property-card,
+.agent-card,
+.info-panel,
+.form-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 10px 28px rgba(15, 44, 64, .08);
+}
+
+.property-card {
+  overflow: hidden;
+}
+
+.property-card .card-img-top {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.property-card .card-title {
+  font-weight: 800;
+}
+
+.property-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.property-meta span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #3d4b58;
+  font-size: .9rem;
+  font-weight: 700;
+  padding: .35rem .7rem;
+  white-space: nowrap;
+}
+
+.badge.text-bg-primary {
+  background: var(--brand) !important;
+  border-radius: 999px;
+  padding: .5rem .65rem;
+}
+
+.detail-hero,
+.detail-thumb {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+.detail-hero {
+  aspect-ratio: 16 / 9;
+}
+
+.detail-thumb {
+  aspect-ratio: 4 / 3;
+}
+
+.info-panel,
+.form-panel {
+  background: #fff;
+  padding: 1.5rem;
+}
+
+.auth-panel {
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(8px);
+}
+
+.price-tag {
+  color: var(--brand-dark);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.table-thumb {
+  width: 76px;
+  height: 58px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  flex: 0 0 auto;
+}
+
+.btn-danger {
+  --bs-btn-bg: #b42318;
+  --bs-btn-border-color: #b42318;
+  --bs-btn-hover-bg: #8f1c13;
+  --bs-btn-hover-border-color: #8f1c13;
+}
+
+.btn-outline-danger {
+  --bs-btn-color: #b42318;
+  --bs-btn-border-color: #d8a09a;
+  --bs-btn-hover-bg: #b42318;
+  --bs-btn-hover-border-color: #b42318;
+}
+
+.form-control,
+.form-select {
+  border-color: var(--line);
+  min-height: 48px;
+}
+
+textarea.form-control {
+  min-height: 150px;
+}
+
+@media (max-width: 767.98px) {
+  .section-pad {
+    padding: 48px 0;
+  }
+
+  .hero-section {
+    background:
+      linear-gradient(180deg, rgba(10, 31, 45, .82), rgba(10, 31, 45, .42)),
+      url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80") center/cover no-repeat;
+  }
+
+  .auth-section {
+    align-items: flex-start;
+  }
+
+  .display-4 {
+    font-size: 2.35rem;
+  }
+
+  .property-meta span {
+    font-size: .82rem;
+  }
+}
