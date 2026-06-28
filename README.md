@@ -147,3 +147,5 @@ Property
 * Inform the group before introducing new features.
 * Push code regularly to GitHub.
 * Communicate any challenges early to avoid delays.
+
+NB -Ensure you install all the requirements from the requirements.txt file in the virtual environment before writing any code.  ( pip install -r requirements.txt)
